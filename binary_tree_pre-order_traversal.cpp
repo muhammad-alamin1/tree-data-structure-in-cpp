@@ -31,7 +31,7 @@ int main(void)
 // create tree node
 Node *create_tree_node(int item)
 {
-    Node *new_node = (Node *)malloc(sizeof(Node));
+    Node *new_node = new Node;
 
     if(new_node == NULL)
     {
@@ -44,6 +44,7 @@ Node *create_tree_node(int item)
     new_node->right_node = NULL;
 
     return new_node;
+    delete new_node;
 }
 
 // add node left
