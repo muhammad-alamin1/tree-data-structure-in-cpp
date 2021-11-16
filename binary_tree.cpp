@@ -80,8 +80,9 @@ Tree_Node *create_tree(void)
 
     Tree_Node *six = create_tree_node(6);
     Tree_Node *seven = create_tree_node(7);
-    add_left_child(five, six);
-    add_right_child(five, seven);
+    add_left_child(five_sec, six);
+    add_right_child(five_sec, seven);
 
     return five;
 }
+
